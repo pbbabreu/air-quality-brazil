@@ -1,0 +1,27 @@
+# Data files — large and reproducible from notebooks
+data/raw/
+data/processed/
+
+# Python virtual environment
+.venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Claude Code working directory
+.claude/
+
+# uv placeholder
+main.py
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
