@@ -104,4 +104,5 @@ Every cleaning notebook must confirm before saving:
 | `inmet_clean.parquet` | INMET weather | 266,592 | 2026-04 |
 | `sisam_clean.parquet` | SISAM air quality | TBD | — |
 | `queimadas_clean.parquet` | INPE fire hotspots | TBD | — |
-| `integrated.parquet` | All datasets joined | TBD | — |
+| `integrated.parquet` | All datasets joined | 5,480 | 2026-04 |
+
