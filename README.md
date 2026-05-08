@@ -11,6 +11,14 @@ machine learning modeling, and an interactive Power BI dashboard.
 
 ---
 
+## 🔍 Quick Summary
+**Stack:** Python · pandas · scikit-learn · Power BI · INMET/INPE APIs  
+**Scale:** 266,592 rows of weather data · 5 cities · 2022–2025  
+**Result:** Random Forest with R²=0.646 · 4-page interactive dashboard  
+**Highlight:** 2024 El Niño anomaly detected — São Paulo fire hotspots 5× above historical average
+
+---
+
 ## Project structure
 
 ```
