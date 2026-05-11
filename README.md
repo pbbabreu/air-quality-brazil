@@ -112,7 +112,7 @@ air_quality_brazil/
 
 ### Modeling (notebook 09)
 
-10 models trained across 5 scopes (Logistic Regression + Random Forest each):
+10 models trained across 5 scopes (Linear Regression + Random Forest each):
 
 | Scope | Algorithm | R² | MAE |
 |---|---|---|---|
@@ -130,6 +130,12 @@ air_quality_brazil/
   reflecting its fire season; `log_hotspots` and nighttime humidity are co-equal
   for BH
 - Models underpredict extreme events — reliable for typical days, not worst-case
+- Porto Alegre's exclusion from the best model is analytically justified — 
+  its R² in isolation (0.411) confirms the model genuinely struggles with its 
+  dynamics, not that the exclusion is post-hoc
+- `city_São Paulo` dominates multi-city feature importance (~0.39) because it 
+  captures SP's chronically elevated baseline — the other features explain 
+  variation around that baseline
 
 ---
 
