@@ -11,6 +11,14 @@ machine learning modeling, and an interactive Power BI dashboard.
 
 ---
 
+## 🔍 Quick Summary
+**Stack:** Python · pandas · scikit-learn · Power BI · INMET/INPE APIs  
+**Scale:** 266,592 rows of weather data · 5 cities · 2022–2025  
+**Result:** Random Forest with R²=0.646 · 4-page interactive dashboard  
+**Highlight:** 2024 El Niño anomaly detected — São Paulo fire hotspots 5× above historical average
+
+---
+
 ## Project structure
 
 ```
@@ -104,7 +112,7 @@ air_quality_brazil/
 
 ### Modeling (notebook 09)
 
-10 models trained across 5 scopes (Logistic Regression + Random Forest each):
+10 models trained across 5 scopes (Linear Regression + Random Forest each):
 
 | Scope | Algorithm | R² | MAE |
 |---|---|---|---|
@@ -122,6 +130,12 @@ air_quality_brazil/
   reflecting its fire season; `log_hotspots` and nighttime humidity are co-equal
   for BH
 - Models underpredict extreme events — reliable for typical days, not worst-case
+- Porto Alegre's exclusion from the best model is analytically justified — 
+  its R² in isolation (0.411) confirms the model genuinely struggles with its 
+  dynamics, not that the exclusion is post-hoc
+- `city_São Paulo` dominates multi-city feature importance (~0.39) because it 
+  captures SP's chronically elevated baseline — the other features explain 
+  variation around that baseline
 
 ---
 
